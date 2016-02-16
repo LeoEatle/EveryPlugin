@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LeoEatle's World</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ForHeadRoom.css" />
+		<link rel="stylesheet" type="text/css" href="css/ForBoostrap.css"/>
+	</head>
+	<body>
+		
+		<header class="header animated">
+			<nav class="navbar navbar-inverse">
+					<div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="此处有LOGO"/></a>
+					    </div>
+					
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						    <ul class="nav navbar-nav">
+						        <li><a href="#">技术文章</a></li>
+						        <li><a href="#">电影点评</a></li>
+						        <li><a href="#">音乐分享</a></li>
+						        <li><a href="sudoku_game.html">数独游戏</a></li>
+						        
+						        <!--<li class="dropdown">
+						          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						          <ul class="dropdown-menu">
+						            <li><a href="#">Action</a></li>
+						            <li><a href="#">Another action</a></li>
+						            <li><a href="#">Something else here</a></li>
+						            <li role="separator" class="divider"></li>
+						            <li><a href="#">Separated link</a></li>
+						            <li role="separator" class="divider"></li>
+						            <li><a href="#">One more separated link</a></li>
+						          </ul>
+						        </li>-->
+						    </ul>
+					        
+						    
+						    
+					        <form class="navbar-form navbar-right" role = "search">
+					        	<!--
+                                	作者：liuyitao811@qq.com
+                                	时间：2015-12-09
+                                	描述：暂时还是不要把登陆框放在这了
+                                -->
+							  <!--<div class="form-group">
+							    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+							    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+							  </div>
+							  <div class="form-group">
+							    <label class="sr-only" for="exampleInputPassword3">Password</label>
+							    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+							  </div>
+							  <div class="checkbox">
+							    <label>
+							      <input type="checkbox"> Remember me
+							    </label>
+							  </div>
+							  <button type="submit" class="btn btn-default">Sign in</button>-->
+							 
+							
+						      <div class="form-group">
+						        <input type="text" class="form-control" placeholder="Search">
+						        <button type="submit" class="btn btn-info"> <span class="glyphicon glyphicon-search"></span>Search</button>
+						      </div>
+						      
+						    
+							</form>
+							
+							<p class="navbar-text navbar-right">Created by <a href="#" class="navbar-link">LeoEatle</a></p>
+						    
+
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					
+				</nav>
+		</header>
+		
+		<!--
+        	作者：liuyitao811@qq.com
+        	时间：2015-12-09
+        	描述：欢迎语
+        -->
+		<div class="jumbotron" id="welcome">
+		  <div class="container">
+		    <h1 class="text-center tlt">Welcome to This World!</h1>
+		    <p class="text-center tlt2" >想让我记住你？</p>
+		    <p class="text-center"><button class="btn btn-info " data-toggle="modal" data-target="#Login" >点此登陆/注册</button></p>
+		    <!--
+            	作者：liuyitao811@qq.com
+            	时间：2015-12-09
+            	描述：模态框
+            -->
+		    <div class="modal fade" id="Login">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">这里是注册界面</h4>
+			      </div>
+			      <div class="modal-body">
+			            <form class="form-horizontal">
+						    <div class="form-group">
+							     <label for="exampleInputEmail1">Email address</label>
+							     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							</div>
+							<div class="form-group">
+							     <label for="exampleInputPassword1">Password</label>
+							     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							
+						</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭 Close</button>
+			        <button type="button" class="btn btn-info">登陆 Log in</button>
+			        <div class="checkbox">
+					    <label>
+					      <input type="checkbox"> 记住我 Remember me
+					    </label>
+					</div>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		  </div>
+		</div>
+		
+	<!--
+    	作者：liuyitao811@qq.com
+    	时间：2015-12-09
+    	描述：轮播插件
+    -->
+    <div class="container">
+    	<div class="row">
+    		
+    	</div>
+    	
+    	
+    	
+    	<div class="row">
+    		<div class="col-xs-12 col-sm-12 col-md-12">
+    			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active text-center">
+				      <img src="img/BingWallpaper-2015-12-08.jpg" alt="Otarriinae">
+				      <div class="carousel-caption">
+                          <h1><small>海狮</small></h1>	  
+                          <p><small>（学名：Otarriinae）：包括5属7种。分布北半球。体型较小，体长一般不超过2米。</small></p>
+						<p><a class="btn btn-xs btn-primary" href="http://www.bing.com/knows/search?q=%E6%B5%B7%E7%8B%AE&mkt=zh-cn" role="button">Learn more</a></p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="img/OverlandPark_ZH-CN7518447869_1920x1080.jpg" alt="Museum at Prairiefire">
+				      <div class="carousel-caption">
+                          <h1><small>Museum at Prairiefire</small></h1>
+                            <p><small>As the only building in the United States to feature Dichroic Glass developed by NASA,</small> </p>
+				        <p><a class="btn btn-xs btn-primary" href="http://museumatpf.org/about-us/#history" role="button">Learn more</a></p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="img/Modica_EN-US11378362609_1920x1080.jpg" alt="Modica">
+				      <div class="carousel-caption">
+                          <h1><small>莫迪卡（Modica）</small></h1>
+                          <p><small>西西里巴洛克风格建筑群的中心，被联合国列入世界文化遗产。这是一座古旧的山城</small></p>
+				        <p><a class="btn btn-xs btn-primary" href="http://www.bing.com/knows/search?q=Modica&mkt=zh-cn" role="button">Learn more</a></p>
+				      </div>
+				    </div>
+				  </div>
+				
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+    		</div>
+    		
+    	</div>
+    	
+    </div>
+    
+	
+
+    
+    
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      
+      <!--<div class="jumbotron">
+      <div class="container">
+        <div class="banner">
+		    <ul>
+		        <li>This is a slide.</li>
+		        <li>This is another slide.</li>
+		        <li>This is a final slide.</li>
+		    </ul>
+		</div>
+      </div>
+    </div>-->
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      
+      
+
+
+
+		
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>	
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/headroom.js" ></script>
+		<script src="js/ForHeadroom.js"></script>
+		<script src="js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lettering.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.textillate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ForTextillate.js" type="text/javascript" charset="utf-8"></script>
+		<script>$(function() { $('.banner').unslider() })</script>
+	</body>
+</html>
